@@ -1,0 +1,213 @@
+.main {
+  width: 310px;
+  height: 470px;
+}
+
+/*Диаграмма: Круг*/
+.diagram__container {
+  position: relative;
+  height: 290px;
+}
+
+.diagram__svg_circle {
+  position: absolute;
+  right: 0;
+}
+
+.diagram__ring,
+.diagram__segment {
+  stroke-lineCap:round;
+}
+
+/*Диаграмма: Флаг*/
+.diagram__svg_flag {
+  position: absolute;
+  top: 4.5%;
+  left: 46.5%;
+}
+
+/*Диаграмма: Текст-блок*/
+.diagram__text_container {
+  position: absolute;
+  top: 77px;
+  left: 89px;
+  width: 145px;
+  text-align: center;
+}
+
+.diagram__percent {
+  padding-left: 7px;
+  font-family: 'Gotham Pro';
+  font-size: 44px;
+  font-weight: 300;
+  color: #4b4a4a;
+}
+.diagram__percent_sub {
+  vertical-align: baseline;
+  font-size: 20px;
+}
+.diagram__percent_sup {
+  margin-left: -13px;
+  vertical-align: top;
+  font-size: 20px;
+}
+
+.diagram__heading {
+  margin-top: -14px;
+  font-size: 21px;
+  color: #4b4a4a;
+}
+
+.diagram__value {
+  font-weight: 600;
+  color: #f2da3a;
+}
+
+.diagram__txt {
+  line-height: 1.1;
+  font-size: 11px;
+  color: #00000070;
+}
+
+.diagram__arrow {
+  font-size: 16px;
+  color: #53995a;
+}
+.icon-up-dir-1 {
+  margin-right: -10px;
+  font-size: 30px;
+  color: #53995a;
+}
+
+/*Диаграмма: Линия*/
+.diagram__svg_line {
+  position: absolute;
+  top: 140px;
+  left: 13px;
+  width: 35px;
+  height: 250px;
+}
+
+
+
+
+/*Индикаторы*/
+.indicators__container {
+  height: 180px;
+  padding: 31px 33px 10px 48px;
+}
+
+.indicators {
+  margin-bottom: 2px;
+}
+
+/*Индикаторы: Заголовок*/
+.indicators__heading {
+  flex-basis: 35%;
+  margin-bottom: 26px;
+  font-size: 14px;
+  font-weight: 100;
+  color: #4b4a4a;
+}
+
+/*Индикаторы: Параметры*/
+.indicators__props {
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0 0 2px;
+}
+
+.indicators__props_pct {
+  font-size: 12px;
+  color: #4b4a4a;
+}
+
+.indicators__props_numb {
+  margin-right: 2px;
+  font-size: 13px;
+  color: #00000050;
+}
+
+.indicators__svg_container {
+  width: 11px;
+}
+
+/*Индикаторы: Прогресс-форма*/
+.indicators__form {
+  flex-direction: column;
+  align-self: flex-start;
+  position: relative;
+  width: 92px;
+  height: 35px;
+  border: 1px solid #00000010;
+  border-radius: 4px;
+}
+.indicators__progress_numb {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  font-size: 12px;
+  color: #4b4a4a;
+}
+
+/*Индикаторы: Прогресс-актив*/
+.indicators__progress_diff {
+  width: 100%;
+
+  background-color: #f3f3f3;
+  border: 0;
+  height: 26px;
+  border-radius: 3px;
+}
+.indicators__progress_diff::-webkit-progress-bar {
+  background-color: #f3f3f3;
+  border: 0;
+  height: 26px;
+  border-radius: 3px 3px 0 0;
+}
+.indicators__progress_diff::-webkit-progress-value {
+  border: 0;
+  height: 26px;
+  border-radius: 3px 0 0 0;
+}
+
+.indicators__dif-green::-webkit-progress-value {
+  background-color: #53995a;
+}
+.indicators__dif-yellow::-webkit-progress-value {
+  background-color: #f2da3a;
+}
+.indicators__dif-red::-webkit-progress-value {
+  background-color: #ff1919;
+}
+
+/*Индикаторы: Прогресс-пассив*/
+.indicators__progress {
+  width: 100%;
+
+  background-color: #f3f3f3;
+  border: 0;
+  height: 7px;
+  border-radius: 3px;
+}
+.indicators__progress::-webkit-progress-bar {
+  background-color: #f3f3f3;
+  border: 0;
+  height: 7px;
+  border-radius: 0 0 3px 3px;
+}
+.indicators__progress::-webkit-progress-value {
+  border: 0;
+  height: 7px;
+  border-radius: 0 0 0 3px;
+}
+
+.indicators__green::-webkit-progress-value {
+  background-color: #53995a60;
+}
+.indicators__yellow::-webkit-progress-value {
+  background-color: #f2da3a60;
+}
+.indicators__red::-webkit-progress-value {
+  background-color: #ff191960;
+}
